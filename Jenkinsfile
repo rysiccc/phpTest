@@ -15,9 +15,7 @@ pipeline{
         stage("RunScript"){
             steps{
                 sh "chmod +x skrypt.sh"
-            }
-            steps{
-                sh "python3 skrypt.sh"
+		sh "python3 skrypt.sh"
             }
         }
     }
